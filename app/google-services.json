@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722167254380",
+    "project_id": "bukhari-academy",
+    "storage_bucket": "bukhari-academy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722167254380:android:ac2f6cb37f006ed2117749",
+        "android_client_info": {
+          "package_name": "com.hasnain.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7-2G-sWZfJ8YeFaS00eK6_TtQy3EOxSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile_picture"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/edit_profile"
+            android:layout_marginTop="120dp"
+            android:layout_toEndOf="@id/image_view"
+            android:layout_marginStart="-80dp"
+
+
+
+
+            />
+
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:hint="full_name"
+            android:layout_below="@id/image_view"
+            android:background="@drawable/background"
+            android:paddingHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="nickname"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/et_full_name"
+            android:background="@drawable/background"
+
+            android:paddingHorizontal="20dp"
+
+            />
+        <EditText
+            android:id="@+id/et_date_of_birth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="date_of_birth"
+            android:layout_below="@id/et_nick_name"
+            android:layout_marginBottom="15dp"
+            android:drawableEnd="@drawable/calendar_icon"
+            android:background="@drawable/background"
+            android:paddingHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/email"
+            android:layout_below="@id/et_date_of_birth"
+            android:background="@drawable/background"
+            android:drawableEnd="@drawable/envelope_icon"
+            android:layout_marginBottom="15dp"
+            android:paddingHorizontal="20dp"
+            />
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="phone_number"
+            android:layout_below="@id/et_email"
+            android:background="@drawable/background"
+            android:layout_marginBottom="15dp"
+            android:paddingHorizontal="20dp"
+            />
+
+        <EditText
+            android:id="@+id/et_geneder"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_phone"
+            android:layout_marginTop="0dp"
+            android:hint="Gender"
+            android:background="@drawable/background"
+            android:layout_marginBottom="15dp"
+            android:paddingHorizontal="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/et_geneder"
+            android:backgroundTint="@color/primary"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>
+</FrameLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Teacher's Photo -->
+    <ImageView
+        android:id="@+id/teacher_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+
+        android:contentDescription="Teacher's Photo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Teacher's Name -->
+    <TextView
+        android:id="@+id/teacher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Teacher's Subject -->
+    <TextView
+        android:id="@+id/teacher_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mathematics"
+        android:textSize="18sp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Contact Information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/teacher_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/teacher_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="john.doe@example.com"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Phone -->
+        <TextView
+            android:id="@+id/teacher_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone:"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/teacher_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+1 234 567 890"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Biography -->
+    <TextView
+        android:id="@+id/teacher_bio_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biography:"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/teacher_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="John Doe has been teaching Mathematics for over 10 years. He holds a Master's degree in Mathematics from XYZ University. He is passionate about helping students understand complex mathematical concepts."
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
